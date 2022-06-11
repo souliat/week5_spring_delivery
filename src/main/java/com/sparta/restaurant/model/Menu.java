@@ -25,7 +25,6 @@ public class Menu {
     private Restaurant restaurant;
 
     // Menu와 Foods는 1:N의 연관관계
-    @JsonBackReference
     @OneToMany(mappedBy = "menu")
     private List<Foods> foodsList = new ArrayList<>();
 
